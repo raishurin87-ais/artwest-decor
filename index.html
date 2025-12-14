@@ -5,13 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Реставрация мебели Астана</title>
 <meta name="description" content="Реставрация мебели в Астане. Премиум материалы, индивидуальный подход.">
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Реставрация мебели Астана</title>
-<meta name="description" content="Реставрация мебели в Астане. Премиум материалы, индивидуальный подход.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -162,6 +155,7 @@ h2 { font-size:32px; margin-bottom:40px; text-align:center; }
   .ba-pair, .process-step { flex-direction: column; align-items: flex-start; }
   nav .menu { display:none; flex-direction:column; gap:15px; }
   nav .burger { display:flex; }
+  nav .menu.active { display:flex; }
 }
 </style>
 </head>
@@ -339,18 +333,17 @@ h2 { font-size:32px; margin-bottom:40px; text-align:center; }
 </div>
 
 <script>
-// БУРГЕР-МЕНЮ
+// BURGER MENU
 const burger = document.getElementById('burger');
 const menu = document.getElementById('menu');
-burger.addEventListener('click', () => menu.classList.toggle('active'));
+burger.addEventListener('click', () => { menu.classList.toggle('active'); });
 
-// FAQ
-const questions = document.querySelectorAll('.faq-question');
-questions.forEach(q => {
+// FAQ TOGGLE
+document.querySelectorAll('.faq-question').forEach(q => {
   q.addEventListener('click', () => {
     q.classList.toggle('active');
     const answer = q.nextElementSibling;
-    if(answer.style.display === 'block') {
+    if(answer.style.display === 'block'){
       answer.style.display = 'none';
     } else {
       answer.style.display = 'block';
@@ -358,17 +351,15 @@ questions.forEach(q => {
   });
 });
 
-// Появление шагов
+// PROCESS STEPS ANIMATION
 const steps = document.querySelectorAll('.process-step');
-window.addEventListener('scroll', () => {
-  const triggerBottom = window.innerHeight / 5 * 4;
-  steps.forEach(step => {
-    const stepTop = step.getBoundingClientRect().top;
-    if(stepTop < triggerBottom) step.classList.add('visible');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){ entry.target.classList.add('visible'); }
   });
-});
+},{ threshold:0.2 });
+steps.forEach(step => observer.observe(step));
 </script>
 
 </body>
 </html>
-
