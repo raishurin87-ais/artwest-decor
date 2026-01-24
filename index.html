@@ -1,349 +1,1550 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Реставрация мебели Астана</title>
-<meta name="description" content="Реставрация мебели в Астане. Премиум материалы, индивидуальный подход.">
-<meta name="google-site-verification" content="zcUi8fLav6Phev9RCGfQh6JYfJKmHfFutHz7IeVgnOM" />
-<meta name="yandex-verification" content="...." />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17885277682">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17885277682');
-</script>
-<!-- Event snippet for Просмотр страницы conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17885277682/eYBHCPP01ecbEPLbrtBC',
-      'value': 1.0,
-      'currency': 'USD'
-  });
-</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg:#f5f7fa;
-  --card:#ffffff;
-  --accent:#3b82f6;
-  --text:#1f2937;
-  --muted:#6b7280;
-}
-* { box-sizing:border-box; margin:0; padding:0; }
-body { font-family:'Inter', sans-serif; background:var(--bg); color:var(--text); }
-
-header {
-  padding:90px 20px 60px 20px;
-  text-align:center;
-  background:linear-gradient(135deg,#1f2937,#111827);
-  color:white;
-  position:relative;
-}
-header h1 { font-size:42px; margin-bottom:15px; }
-header p { font-size:18px; color:#d1d5db; }
-.btn { display:inline-block; margin-top:25px; background:var(--accent); color:white; padding:14px 34px; border-radius:40px; text-decoration:none; font-weight:600; transition:.3s; }
-.btn:hover { opacity:.85; }
-
-nav {
-  position:sticky;
-  top:0;
-  background:white;
-  box-shadow:0 4px 20px rgba(0,0,0,.08);
-  padding:15px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  z-index:999;
-}
-nav a { margin:0 15px; text-decoration:none; color:var(--text); font-weight:500; }
-nav .menu { display:flex; gap:15px; }
-nav .burger { display:none; flex-direction:column; cursor:pointer; gap:5px; }
-nav .burger span { width:25px; height:3px; background:var(--text); transition:.3s; }
-nav .since { font-size:13px; color:var(--muted); font-weight:600; letter-spacing:1px; text-transform:uppercase; }
-
-.container { max-width:1100px; margin:auto; padding:80px 20px; }
-h2 { font-size:32px; margin-bottom:40px; text-align:center; }
-
-.card { background:var(--card); padding:35px; border-radius:18px; box-shadow:0 15px 40px rgba(0,0,0,.08); transition:.4s; }
-.card:hover { transform:translateY(-8px); }
-.card h3 { margin-bottom:10px; }
-.about { background:white; border-radius:20px; padding:50px; box-shadow:0 20px 50px rgba(0,0,0,.08); }
-.about p { line-height:1.7; color:var(--muted); }
-
-.before-after-section { margin-bottom:50px; }
-.ba-pair { display:flex; gap:20px; flex-wrap:wrap; }
-.ba-card { position:relative; border-radius:18px; overflow:hidden; box-shadow:0 15px 40px rgba(0,0,0,.15); flex:1 1 250px; }
-.ba-card img { width:100%; height:300px; object-fit:cover; }
-.ba-card span { position:absolute; top:15px; left:15px; background:rgba(0,0,0,.7); color:white; padding:6px 14px; border-radius:20px; font-size:14px; }
-.ba-caption { margin-top:10px; font-weight:600; font-size:16px; color:#1f2937; }
-
-.review-inline { display:flex; align-items:flex-start; gap:15px; margin-top:10px; background:#f9fafb; padding:15px; border-radius:12px; box-shadow:0 5px 20px rgba(0,0,0,0.05); }
-.review-avatar img { border-radius:50%; width:50px; height:50px; }
-.review-content strong { display:block; margin-bottom:5px; }
-.rating { color:#fbbf24; font-size:14px; margin-bottom:5px; }
-.review-content p { margin:0; color:#6b7280; }
-
-.faq { background:white; border-radius:20px; padding:30px; box-shadow:0 15px 40px rgba(0,0,0,.08); margin-bottom:60px; }
-.faq-item { margin-bottom:15px; border-bottom:1px solid #e5e7eb; padding-bottom:10px; }
-.faq-question { cursor:pointer; position:relative; font-weight:600; display:flex; justify-content:space-between; align-items:center; color:#1f2937; }
-.faq-answer { display:none; margin-top:10px; color:#6b7280; line-height:1.6; transition: all 0.3s ease; }
-.faq-toggle { font-size:20px; color:var(--accent); transition: transform 0.3s ease; }
-.faq-question.active .faq-toggle { transform: rotate(45deg); }
-
-.contacts { text-align:center; margin-bottom:60px; background:#3b82f6; color:white; padding:40px 20px; border-radius:20px; }
-.contacts a { display:inline-block; margin:10px; color:white; text-decoration:none; }
-
-.process-steps { display: flex; flex-direction: column; gap: 30px; }
-.process-step {
-  background: white;
-  border-radius: 18px;
-  padding: 30px;
-  box-shadow: 0 15px 40px rgba(0,0,0,.08);
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
-}
-.process-step.visible { opacity: 1; transform: translateY(0); }
-.step-number { font-size: 28px; font-weight: 700; color: var(--accent); min-width: 40px; }
-.process-step h3 { margin: 0 0 10px 0; font-size: 20px; color: var(--text); }
-.process-step p { margin: 0; color: var(--muted); line-height: 1.6; }
-
-.social-float { position: fixed; bottom: 20px; right: 20px; display:flex; flex-direction:column; gap:15px; z-index:1000; }
-.float-btn { width:60px; height:60px; border-radius:50%; display:flex; justify-content:center; align-items:center; box-shadow:0 5px 20px rgba(0,0,0,0.2); transition:0.3s; }
-.float-btn img { width:32px; height:32px; }
-.float-btn:hover { transform:scale(1.1); }
-.float-btn.whatsapp { background-color:#25D366; }
-.float-btn.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
-
-@media(max-width:768px){
-  nav .menu { 
-    display: none; 
-    flex-direction: column; 
-    gap: 15px; 
-    position: absolute; 
-    top: 60px; 
-    right: 20px; 
-    background: white; 
-    padding: 15px 20px; 
-    border-radius: 12px; 
-    box-shadow: 0 10px 25px rgba(0,0,0,.1); 
-    z-index: 999; 
-  }
-  nav .menu.active { display: flex; }
-  nav .burger { display: flex; cursor: pointer; }
-  .ba-pair, .process-step { flex-direction: column; align-items: flex-start; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art West Decor | Реставрация мебели в Астане | Профессиональная реставрация мебели</title>
+    <meta name="description" content="Профессиональная реставрация мебели в Астане. 10+ лет опыта. Реставрация стульев, столов, шкафов, дверей, лестниц, антикварной мебели. Премиум материалы, гарантия качества.">
+    <meta name="keywords" content="реставрация мебели, реставрация мебели Астана, реставрация стульев, реставрация столов, реставрация шкафов, ремонт мебели, обновление мебели, антикварная мебель, перетяжка мебели">
+    <meta name="google-site-verification" content="zcUi8fLav6Phev9RCGfQh6JYfJKmHfFutHz7IeVgnOM" />
+    <meta name="yandex-verification" content="f5ecded85656d5c1" />
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Art West Decor | Реставрация мебели в Астане">
+    <meta property="og:description" content="Профессиональная реставрация мебели любой сложности. 10+ лет опыта. Премиум материалы.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://artwestdecor.kz">
+    <meta property="og:image" content="https://artwestdecor.kz/images/og-image.jpg">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17885277682"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17885277682');
+    </script>
+    
+    <!-- Фавикон -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #cba258;
+            --accent: #3b82f6;
+            --light: #f8f9fa;
+            --dark: #1f2937;
+            --text: #2d3748;
+            --muted: #718096;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            --radius: 12px;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            background-color: #fefefe;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            color: white;
+        }
+        
+        h2 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            padding: 100px 0;
+        }
+        
+        .section-light {
+            background-color: var(--light);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 16px 36px;
+            background: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(203, 162, 88, 0.3);
+        }
+        
+        .btn:hover {
+            background: #b8924a;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(203, 162, 88, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+            box-shadow: none;
+        }
+        
+        .btn-outline:hover {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        /* HEADER */
+        header {
+            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.95)), url('images/header-bg.jpg') center/cover no-repeat;
+            color: white;
+            padding: 180px 0 120px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header-subtitle {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+        }
+        
+        /* НАВИГАЦИЯ */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: var(--transition);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 2rem;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--secondary);
+        }
+        
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: var(--transition);
+        }
+        
+        .nav-menu a:hover:after {
+            width: 100%;
+        }
+        
+        .burger {
+            display: none;
+            cursor: pointer;
+        }
+        
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: var(--primary);
+            margin: 5px;
+            transition: var(--transition);
+        }
+        
+        /* О НАС */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature i {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        /* НАШИ РАБОТЫ */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .portfolio-item {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .portfolio-img {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .portfolio-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .portfolio-item:hover .portfolio-img img {
+            transform: scale(1.05);
+        }
+        
+        .portfolio-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--secondary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .portfolio-content {
+            padding: 25px;
+        }
+        
+        .portfolio-content h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .portfolio-meta {
+            display: flex;
+            justify-content: space-between;
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* УСЛУГИ */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--secondary);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* ПРОЦЕСС РАБОТЫ */
+        .process-timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .process-timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: var(--secondary);
+        }
+        
+        .process-step {
+            display: flex;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .process-step:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        
+        .process-content {
+            width: 45%;
+            background: white;
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        
+        .process-step:nth-child(even) .process-content {
+            margin-left: 5%;
+        }
+        
+        .process-step:nth-child(odd) .process-content {
+            margin-right: 5%;
+        }
+        
+        .process-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            z-index: 1;
+        }
+        
+        /* ОТЗЫВЫ */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: "“";
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 5rem;
+            color: var(--secondary);
+            opacity: 0.2;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .testimonial-rating {
+            color: #fbbf24;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* КОНТАКТЫ */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(203, 162, 88, 0.2);
+        }
+        
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: var(--radius);
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 30px 25px;
+            max-height: 500px;
+        }
+        
+        .faq-toggle {
+            color: var(--secondary);
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        /* ФУТЕР */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 80px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo span {
+            color: var(--secondary);
+        }
+        
+        .footer-title {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background: var(--secondary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        /* Плавающие кнопки */
+        .float-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+        
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            font-size: 1.5rem;
+        }
+        
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+        }
+        
+        .phone-btn {
+            background: var(--accent);
+        }
+        
+        .instagram-btn {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        }
+        
+        /* АДАПТИВНОСТЬ */
+        @media (max-width: 992px) {
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 2.3rem; }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .process-timeline:before {
+                left: 30px;
+            }
+            
+            .process-step {
+                flex-direction: row !important;
+            }
+            
+            .process-content {
+                width: calc(100% - 80px);
+                margin-left: 80px !important;
+            }
+            
+            .process-number {
+                left: 30px;
+                transform: translateX(-50%);
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 70px 0;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                right: -100%;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.5s;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                padding: 20px 0;
+            }
+            
+            .nav-menu.active {
+                right: 0;
+            }
+            
+            .nav-menu li {
+                margin: 15px 0;
+            }
+            
+            .burger {
+                display: block;
+            }
+            
+            .burger.active .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            
+            .burger.active .line2 {
+                opacity: 0;
+            }
+            
+            .burger.active .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            h1 { font-size: 2.3rem; }
+            h2 { font-size: 1.8rem; }
+            
+            .portfolio, .services, .testimonials {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- НАВИГАЦИЯ -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Art West <span>Decor</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#portfolio">Наши работы</a></li>
+                <li><a href="#process">Процесс</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ЗАГОЛОВОК -->
+    <header id="home">
+        <div class="container">
+            <div class="header-content">
+                <span class="since-tag">Основано в 2015</span>
+                <h1>Реставрация мебели в Астане</h1>
+                <p class="header-subtitle">Вернём вашей мебели первоначальный вид или создадим новый стиль. 10+ лет опыта, премиум материалы, гарантия качества.</p>
+                <div class="header-buttons">
+                    <a href="#contact" class="btn">Получить консультацию</a>
+                    <a href="#portfolio" class="btn btn-outline">Наши работы</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- О НАС -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>О нашей компании</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Компания <strong>Art West Decor</strong> уже более 10 лет занимается профессиональной реставрацией мебели в Астане. Мы специализируемся на восстановлении и обновлении мебели любой сложности: от современных предметов интерьера до антикварных шедевров.</p>
+                    <p>Наша команда — это опытные мастера, дизайнеры и реставраторы, которые вкладывают душу в каждую деталь. Мы используем только качественные материалы и проверенные технологии, чтобы результат превзошёл ваши ожидания.</p>
+                    <p>Мы ценим индивидуальный подход к каждому клиенту и его потребностям. Наша цель — не просто отреставрировать мебель, а создать уникальный предмет, который будет радовать вас долгие годы.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-image.jpg" alt="Наша мастерская" style="width:100%; border-radius: var(--radius); box-shadow: var(--shadow);">
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-medal"></i>
+                    <h3>10+ лет опыта</h3>
+                    <p>Более десяти лет успешной работы и сотни довольных клиентов</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-palette"></i>
+                    <h3>Индивидуальный дизайн</h3>
+                    <p>Создаём уникальные решения под ваш интерьер и стиль</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Гарантия качества</h3>
+                    <p>Даём гарантию на все виды работ и используемые материалы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- УСЛУГИ -->
+    <section id="services" class="section section-light">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chair"></i></div>
+                    <h3>Реставрация стульев</h3>
+                    <p>Полное восстановление, перетяжка, замена обивки, укрепление конструкции</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bed"></i></div>
+                    <h3>Реставрация диванов</h3>
+                    <p>Обновление обивки, замена наполнителя, ремонт механизмов</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-door-closed"></i></div>
+                    <h3>Реставрация дверей</h3>
+                    <p>Восстановление, покраска, замена стекол и фурнитуры</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-archive"></i></div>
+                    <h3>Реставрация шкафов</h3>
+                    <p>Обновление фасадов, замена фурнитуры, внутренняя перепланировка</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-table"></i></div>
+                    <h3>Реставрация столов</h3>
+                    <p>Восстановление столешниц, реставрация ножек, полировка</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chess-board"></i></div>
+                    <h3>Реставрация комодов</h3>
+                    <p>Восстановление ящиков, замена направляющих, декоративная отделка</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-sign"></i></div>
+                    <h3>Реставрация лестниц</h3>
+                    <p>Укрепление конструкции, замена ступеней, покраска, полировка</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-couch"></i></div>
+                    <h3>Антикварная мебель</h3>
+                    <p>Особый подход к восстановлению старинной мебели с сохранением её ценности</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- НАШИ РАБОТЫ -->
+<!-- НАШИ РАБОТЫ -->
+<section id="portfolio" class="section">
+    <div class="container">
+        <h2>Наши работы</h2>
+        <div class="portfolio">
 
-<header>
-  <span class="since" style="position:absolute; top:20px; left:20px;">Since 2015</span>
-  <h1>Реставрация мебели Астана</h1>
-  <p>Индивидуальные проекты · Премиум материалы</p>
-  <a href="#contacts" class="btn">Рассчитать стоимость</a>
-</header>
+            <!-- Работа 1 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <span class="portfolio-badge">До/После</span>
+                    <img src="images/work1-before.jpg" alt="До" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,\
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" fill=\"#f0f0f0\">\
+                    <text x=\"50%\" y=\"45%\" font-family=\"Arial\" font-size=\"18\" fill=\"#999\" text-anchor=\"middle\">До</text>\
+                    </svg>';">
+                    <img src="images/work1-after.jpg" alt="После" style="margin-top:10px;" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,\
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" fill=\"#f0f0f0\">\
+                    <text x=\"50%\" y=\"45%\" font-family=\"Arial\" font-size=\"18\" fill=\"#999\" text-anchor=\"middle\">После</text>\
+                    </svg>';">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Классический шкаф в современный цвет</h3>
+                    <div class="portfolio-meta">
+                        <span><i class="far fa-clock"></i> 5 дней</span>
+                        <span><i class="fas fa-tag"></i> 45 000 ₸</span>
+                    </div>
+                    <p>Полная покраска, замена фурнитуры и укрепление корпуса. Оттенок выбран по каталогу RAL.</p>
+                </div>
+            </div>
 
-<nav>
-  <div class="menu" id="menu">
-    <a href="#works">Наши работы</a>
-    <a href="#about">О нас</a>
-    <a href="#faq">FAQ</a>
-    <a href="#process">Как мы работаем</a>
-    <a href="#contacts">Контакты</a>
-  </div>
-  <div class="burger" id="burger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</nav>
+            <!-- Работа 2 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <span class="portfolio-badge">До/После</span>
+                    <img src="images/work2-before.jpg" alt="До" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,\
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" fill=\"#f0f0f0\">\
+                    <text x=\"50%\" y=\"45%\" font-family=\"Arial\" font-size=\"18\" fill=\"#999\" text-anchor=\"middle\">До</text>\
+                    </svg>';">
+                    <img src="images/work2-after.jpg" alt="После" style="margin-top:10px;" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,\
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" fill=\"#f0f0f0\">\
+                    <text x=\"50%\" y=\"45%\" font-family=\"Arial\" font-size=\"18\" fill=\"#999\" text-anchor=\"middle\">После</text>\
+                    </svg>';">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Деревянная лестница «под орех»</h3>
+                    <div class="portfolio-meta">
+                        <span><i class="far fa-clock"></i> 7 дней</span>
+                        <span><i class="fas fa-tag"></i> 85 000 ₸</span>
+                    </div>
+                    <p>Шлифовка, тонировка и матовый лак. Устранены сколы и вмятины.</p>
+                </div>
+            </div>
 
-<div class="container" id="works">
-  <h2>Наши работы</h2>
+            <!-- Работа 3 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <span class="portfolio-badge">До/После</span>
+                    <img src="images/work3-before.jpg" alt="До" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,\
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" fill=\"#f0f0f0\">\
+                    <text x=\"50%\" y=\"45%\" font-family=\"Arial\" font-size=\"18\" fill=\"#999\" text-anchor=\"middle\">До</text>\
+                    </svg>';">
+                    <img src="images/work3-after.jpg" alt="После" style="margin-top:10px;" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,\
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 250\" fill=\"#f0f0f0\">\
+                    <text x=\"50%\" y=\"45%\" font-family=\"Arial\" font-size=\"18\" fill=\"#999\" text-anchor=\"middle\">После</text>\
+                    </svg>';">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Кухонные стулья в новой обивке</h3>
+                    <div class="portfolio-meta">
+                        <span><i class="far fa-clock"></i> 4 дня</span>
+                        <span><i class="fas fa-tag"></i> 35 000 ₸</span>
+                    </div>
+                    <p>Полная перетяжка, замена пены, покраска каркаса. Ткань — влагоотталкивающая.</p>
+                </div>
+            </div>
 
-  <div class="before-after-section">
-    <div class="ba-pair">
-      <div class="ba-card"><span>До</span><img src="images/before1.jpg" alt="До"></div>
-      <div class="ba-card"><span>После</span><img src="images/after1.jpg" alt="После"></div>
-    </div>
-    <div class="ba-caption">Шкаф перекрасили на синий</div>
-    <div class="review-inline">
-      <div class="review-avatar"><img src="images/avatar1.jpg" alt="Айгерим Т."></div>
-      <div class="review-content">
-        <strong>Айгерим Т.</strong>
-        <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
-        <p>Шкаф получился супер! Цвет и качество идеально подошли к интерьеру.</p>
-      </div>
-    </div>
-  </div>
+        </div>
+    </section>
+    <!-- ПРОЦЕСС РАБОТЫ -->
+    <section id="process" class="section section-light">
+        <div class="container">
+            <h2>Как мы работаем</h2>
+            <div class="process-timeline">
+                <!-- Шаг 1 -->
+                <div class="process-step">
+                    <div class="process-content">
+                        <h3>Консультация и выезд мастера</h3>
+                        <p>Наш специалист приезжает к вам для оценки состояния мебели, обсуждения ваших пожеланий и определения объёма работ. Вы получаете предварительный расчёт стоимости.</p>
+                    </div>
+                    <div class="process-number">1</div>
+                </div>
+                
+                <!-- Шаг 2 -->
+                <div class="process-step">
+                    <div class="process-content">
+                        <h3>Подписание договора</h3>
+                        <p>Мы заключаем договор, в котором фиксируем все детали работы: сроки, стоимость, материалы и гарантии. Вносится предоплата 50%.</p>
+                    </div>
+                    <div class="process-number">2</div>
+                </div>
+                
+                <!-- Шаг 3 -->
+                <div class="process-step">
+                    <div class="process-content">
+                        <h3>Забор мебели</h3>
+                        <p>Мы аккуратно забираем мебель и доставляем её в нашу мастерскую. Используем защитные материалы для безопасной транспортировки.</p>
+                    </div>
+                    <div class="process-number">3</div>
+                </div>
+                
+                <!-- Шаг 4 -->
+                <div class="process-step">
+                    <div class="process-content">
+                        <h3>Реставрация в мастерской</h3>
+                        <p>Профессиональная реставрация с использованием качественных материалов. На каждом этапе контролируем качество работ. Вы можете получить фотоотчёт о процессе.</p>
+                    </div>
+                    <div class="process-number">4</div>
+                </div>
+                
+                <!-- Шаг 5 -->
+                <div class="process-step">
+                    <div class="process-content">
+                        <h3>Доставка и установка</h3>
+                        <p>Готовую мебель доставляем обратно, устанавливаем на место. Вы проверяете результат и оплачиваете оставшуюся часть стоимости.</p>
+                    </div>
+                    <div class="process-number">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ОТЗЫВЫ -->
+<section id="testimonials" class="section">
+    <div class="container">
+        <h2>Отзывы клиентов</h2>
+        <div class="testimonials">
 
-  <div class="before-after-section">
-    <div class="ba-pair">
-      <div class="ba-card"><span>До</span><img src="images/before2.jpg" alt="До"></div>
-      <div class="ba-card"><span>После</span><img src="images/after2.jpg" alt="После"></div>
-    </div>
-    <div class="ba-caption">Домашняя лестница реставрирована и отполирована</div>
-    <div class="review-inline">
-      <div class="review-avatar"><img src="images/avatar2.jpg" alt="Бекзат Н."></div>
-      <div class="review-content">
-        <strong>Бекзат Н.</strong>
-        <div class="rating">⭐⭐⭐⭐⭐ 4.9/5</div>
-        <p>Лестница выглядит как новая! Быстро и аккуратно сделали работу.</p>
-      </div>
-    </div>
-  </div>
+            <!-- Отзыв 1 (старый) -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>«Шкаф получился просто великолепно! Цвет и качество работы превзошли мои ожидания. Мастера работали аккуратно, соблюдали сроки.»</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23e5e7eb'/><path d='M50 55c-9.4 0-17-7.6-17-17s7.6-17 17-17 17 7.6 17 17-7.6 17-17 17zm0 8c12.2 0 22 9.8 22 22v5H28v-5c0-12.2 9.8-22 22-22z' fill='%239ca3af'/></svg>" alt="Аватар">
+                    </div>
+                    <div><h4>Айгерим Т.</h4><p>Реставрация шкафа</p></div>
+                </div>
+            </div>
 
-  <div class="before-after-section">
-    <div class="ba-pair">
-      <div class="ba-card"><span>До</span><img src="images/before3.jpg" alt="До"></div>
-      <div class="ba-card"><span>После</span><img src="images/after3.jpg" alt="После"></div>
-    </div>
-    <div class="ba-caption">Стулья перекрашены и обновлена обивка</div>
-    <div class="review-inline">
-      <div class="review-avatar"><img src="images/avatar3.jpg" alt="Мария К."></div>
-      <div class="review-content">
-        <strong>Мария К.</strong>
-        <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
-        <p>Стулья преобразились! Сделано красиво и недорого, всем рекомендую.</p>
-      </div>
-    </div>
-  </div>
-</div>
+            <!-- Отзыв 2 (старый) -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>«Лестница в доме после реставрации выглядит как новая! Работа выполнена качественно и в срок. Особенно порадовала аккуратность мастеров.»</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23e5e7eb'/><path d='M50 55c-9.4 0-17-7.6-17-17s7.6-17 17-17 17 7.6 17 17-7.6 17-17 17zm0 8c12.2 0 22 9.8 22 22v5H28v-5c0-12.2 9.8-22 22-22z' fill='%239ca3af'/></svg>" alt="Аватар">
+                    </div>
+                    <div><h4>Бекзат Н.</h4><p>Реставрация лестницы</p></div>
+                </div>
+            </div>
 
-<div class="container" id="about">
-  <h2>О нас</h2>
-  <div class="about">
-    <p>Мы — команда профессиональных мастеров с опытом более 10 лет. Наша специализация — реставрация мебели любой сложности: стулья, столы, шкафы, двери, лестницы. Мы сохраняем уникальный стиль каждой вещи, используя премиальные материалы и проверенные техники.</p>
-    <p>Каждая деталь важна: от восстановления покрытия и укрепления конструкции до аккуратной финишной отделки. Индивидуальный подход к каждому клиенту гарантирует, что обновлённая мебель гармонично впишется в интерьер вашего дома.</p>
-    <p>За 10 лет работы мы сделали более 300 довольных клиентов, которые получили мебель, обновлённую с любовью и мастерством.</p>
-  </div>
-</div>
+            <!-- Отзыв 3 (старый) -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>«Стулья после реставрации просто не узнать! Цвет обивки идеально подошёл к интерьеру. Качество на высоте, цена адекватная.»</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23e5e7eb'/><path d='M50 55c-9.4 0-17-7.6-17-17s7.6-17 17-17 17 7.6 17 17-7.6 17-17 17zm0 8c12.2 0 22 9.8 22 22v5H28v-5c0-12.2 9.8-22 22-22z' fill='%239ca3af'/></svg>" alt="Аватар">
+                    </div>
+                    <div><h4>Мария К.</h4><p>Реставрация стульев</p></div>
+                </div>
+            </div>
 
-<div class="container" id="faq">
-  <h2>Часто задаваемые вопросы</h2>
-  <div class="faq">
-    <div class="faq-item">
-      <h3 class="faq-question">1️⃣ Сколько времени занимает работа? <span class="faq-toggle">+</span></h3>
-      <p class="faq-answer">От 3 до 10 дней в зависимости от сложности работы.</p>
-    </div>
-    <div class="faq-item">
-      <h3 class="faq-question">2️⃣ Как производится оплата? <span class="faq-toggle">+</span></h3>
-      <p class="faq-answer">50% предоплата, остальное после получения мебели.</p>
-    </div>
-    <div class="faq-item">
-      <h3 class="faq-question">3️⃣ Доставка? <span class="faq-toggle">+</span></h3>
-      <p class="faq-answer">Доставка в пределах города Астана — забираем и привозим мебель аккуратно.</p>
-    </div>
-    <div class="faq-item">
-      <h3 class="faq-question">4️⃣ Можно ли реставрировать старую антикварную мебель? <span class="faq-toggle">+</span></h3>
-      <p class="faq-answer">Да, мы работаем с любой мебелью, включая антиквариат, сохраняем оригинальный стиль.</p>
-    </div>
-    <div class="faq-item">
-      <h3 class="faq-question">5️⃣ Как выбрать цвет и покрытие? <span class="faq-toggle">+</span></h3>
-      <p class="faq-answer">Мы консультируем по цвету и материалам, учитывая ваш интерьер и пожелания.</p>
-    </div>
-    <div class="faq-item">
-      <h3 class="faq-question">6️⃣ Можно ли сделать срочный заказ? <span class="faq-toggle">+</span></h3>
-      <p class="faq-answer">Да, но срок и стоимость зависят от объема работы. Свяжитесь с нами для уточнения.</p>
-    </div>
-  </div>
-</div>
+            <!-- Отзыв 4 (новый) -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>«Диван после перетяжки стал центром гостиной! Подобрали идеальную ткань, всё сделали аккуратно и быстро. Рекомендую!»</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23e5e7eb'/><path d='M50 55c-9.4 0-17-7.6-17-17s7.6-17 17-17 17 7.6 17 17-7.6 17-17 17zm0 8c12.2 0 22 9.8 22 22v5H28v-5c0-12.2 9.8-22 22-22z' fill='%239ca3af'/></svg>" alt="Аватар">
+                    </div>
+                    <div><h4>Дана К.</h4><p>Перетяжка дивана</p></div>
+                </div>
+            </div>
 
-<div class="container" id="process">
-  <h2>Как мы работаем</h2>
-  <div class="process-steps">
-    <div class="process-step">
-      <div class="step-number">1</div>
-      <h3>Выезд дизайнера-оценщика</h3>
-      <p>Наш мастер приезжает к вам, оценивает мебель и дает профессиональную консультацию.</p>
+            <!-- Отзыв 5 (новый) -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>«Кресло-качалка выглядит как новое! Убрали царапины, покрыли защитным воском – теперь снова радует глаз.»</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23e5e7eb'/><path d='M50 55c-9.4 0-17-7.6-17-17s7.6-17 17-17 17 7.6 17 17-7.6 17-17 17zm0 8c12.2 0 22 9.8 22 22v5H28v-5c0-12.2 9.8-22 22-22z' fill='%239ca3af'/></svg>" alt="Аватар">
+                    </div>
+                    <div><h4>Руслан С.</h4><p>Реставрация кресла</p></div>
+                </div>
+            </div>
+
+            <!-- Отзыв 6 (новый) -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>«Комод превратился в стильный предмет интерьера! Цвет подобрали идеально, качество покраски на высшем уровне.»</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23e5e7eb'/><path d='M50 55c-9.4 0-17-7.6-17-17s7.6-17 17-17 17 7.6 17 17-7.6 17-17 17zm0 8c12.2 0 22 9.8 22 22v5H28v-5c0-12.2 9.8-22 22-22z' fill='%239ca3af'/></svg>" alt="Аватар">
+                    </div>
+                    <div><h4>Айгуль М.</h4><p>Реставрация комода</p></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+<section id="faq" class="section section-light">
+    <div class="container">
+        <h2>Частые вопросы</h2>
+        <div class="faq-container">
+
+            <!-- Вопрос 1 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Сколько времени занимает реставрация?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Сроки зависят от сложности работы и состояния мебели. Обычно реставрация занимает от 3 до 10 дней. Простые работы (перетяжка стула) могут быть выполнены за 2-3 дня, комплексная реставрация антикварной мебели может занять до 2 недель.</p>
+                </div>
+            </div>
+
+            <!-- Вопрос 2 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Как производится оплата?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Мы работаем по предоплате 50% при заключении договора. Остальные 50% вы оплачиваете после выполнения работы и приёма результата. Принимаем наличные, банковские карты и переводы.</p>
+                </div>
+            </div>
+
+            <!-- Вопрос 3 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Есть ли у вас доставка?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Да, мы обеспечиваем доставку мебели в пределах Астаны. Аккуратно забираем мебель для реставрации и доставляем обратно после выполнения работ. Для крупногабаритных предметов используем специальное оборудование.</p>
+                </div>
+            </div>
+
+            <!-- Вопрос 4 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Работаете ли вы с антикварной мебелью?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Да, мы специализируемся на реставрации антикварной мебели. Используем специальные техники и материалы, чтобы сохранить историческую ценность и уникальный стиль предметов. Консультируем по вопросам сохранения антиквариата.</p>
+                </div>
+            </div>
+
+            <!-- Вопрос 5 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Как выбрать материал и цвет?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Наш дизайнер поможет подобрать материалы и цвета, которые наилучшим образом подойдут к вашему интерьеру. Мы предоставляем образцы тканей, кожи, цветовые палитры и показываем примеры выполненных работ.</p>
+                </div>
+            </div>
+
+            <!-- Вопрос 6 (НОВЫЙ) -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Можно ли заказать реставрацию по индивидуальному дизайну?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Конечно! Мы разрабатываем индивидуальные проекты: подбираем цвет, фактуру, фурнитуру и отделку под ваш интерьер.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="process-step">
-      <div class="step-number">2</div>
-      <h3>Договор и оплата 50%</h3>
-      <p>Вы подписываете договор и вносите 50% предоплаты. Остаток после выполнения работы.</p>
+</section>
+    
+    <!-- КОНТАКТЫ -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>г. Астана, Казахстан<br>ул. Таскескен 5</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Телефоны</h3>
+                            <p><a href="tel:+77752777275" style="color:inherit; text-decoration:none;">+7 775 277 72 75</a></p>
+                            <p><a href="tel:+777713238474" style="color:inherit; text-decoration:none;">+7 777 132 38 474</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Время работы</h3>
+                            <p>Пн-Пт: 9:00 - 19:00<br>Сб: 10:00 - 16:00<br>Вс: выходной</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@artwestdecor.kz" style="color:inherit; text-decoration:none;">info@artwestdecor.kz</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://wa.me/77752777275" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/art_west_decor" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Оставьте заявку</h3>
+                    <p>Мы свяжемся с вами в течение часа</p>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" class="form-control" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Описание мебели</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Опишите, какую мебель нужно отреставрировать"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width:100%;">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ФУТЕР -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">Art West <span>Decor</span></div>
+                    <p>Профессиональная реставрация мебели в Астане. 10+ лет опыта, премиум материалы, гарантия качества.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Реставрация стульев</a></li>
+                        <li><a href="#services">Реставрация диванов</a></li>
+                        <li><a href="#services">Реставрация шкафов</a></li>
+                        <li><a href="#services">Реставрация столов</a></li>
+                        <li><a href="#services">Реставрация лестниц</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#portfolio">Наши работы</a></li>
+                        <li><a href="#process">Процесс</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+77752777275">+7 775 277 72 75</a></li>
+                        <li><a href="tel:+777713238474">+7 777 132 38 474</a></li>
+                        <li>г. Астана, ул. Таскескен 5</li>
+                        <li>Пн-Пт: 9:00 - 19:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Art West Decor. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Плавающие кнопки -->
+    <div class="float-buttons">
+        <a href="https://wa.me/77752777275" class="float-btn whatsapp-btn" target="_blank" rel="noopener" title="Написать в WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+77752777275" class="float-btn phone-btn" title="Позвонить нам">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://www.instagram.com/art_west_decor" class="float-btn instagram-btn" target="_blank" rel="noopener" title="Наш Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
     </div>
-    <div class="process-step">
-      <div class="step-number">3</div>
-      <h3>Забор мебели</h3>
-      <p>Мы аккуратно забираем мебель для реставрации в нашей мастерской.</p>
-    </div>
-    <div class="process-step">
-      <div class="step-number">4</div>
-      <h3>Реставрация</h3>
-      <p>Профессиональная реставрация с использованием премиальных материалов и технологий.</p>
-    </div>
-    <div class="process-step">
-      <div class="step-number">5</div>
-      <h3>Доставка обратно</h3>
-      <p>Готовую мебель доставляем и устанавливаем у вас дома, проверяем качество.</p>
-    </div>
-  </div>
-</div>
-
-<div class="container" id="contacts">
-  <h2>Контакты</h2>
-  <div class="contacts">
-    <p>📍 г. Астана, Казахстан<br>
-    ул. Таскескен 5</p>
-    <a href="tel:+77752777275">+7 775 277 72 75</a><br>
-    <a href="tel:+777713238474">+7 777 132 38 474</a><br>
-    <a href="https://wa.me/77752777275" target="_blank">WhatsApp</a>
-    <a href="https://www.instagram.com/art_west_decor" target="_blank">Instagram</a>
-  </div>
-</div>
-
-<div class="social-float">
-  <a href="https://wa.me/77752777275" target="_blank" class="float-btn whatsapp">
-    <img src="images/whatsapp-icon.png" alt="WhatsApp">
-  </a>
-  <a href="https://www.instagram.com/art_west_decor" target="_blank" class="float-btn instagram">
-    <img src="images/instagram-icon.png" alt="Instagram">
-  </a>
-</div>
-
-<script>
-const burger = document.getElementById('burger');
-const menu = document.getElementById('menu');
-burger.addEventListener('click', () => menu.classList.toggle('active'));
-document.querySelectorAll('#menu a').forEach(link => link.addEventListener('click', () => menu.classList.remove('active')));
-
-document.querySelectorAll('.faq-question').forEach(q => {
-  q.addEventListener('click', () => {
-    q.classList.toggle('active');
-    const answer = q.nextElementSibling;
-    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-  });
-});
-
-const steps = document.querySelectorAll('.process-step');
-function revealSteps() {
-  const triggerBottom = window.innerHeight / 5 * 4;
-  steps.forEach(step => {
-    const stepTop = step.getBoundingClientRect().top;
-    if(stepTop < triggerBottom) step.classList.add('visible');
-  });
-}
-window.addEventListener('scroll', revealSteps);
-window.addEventListener('load', revealSteps);
-</script>
-
+    
+    <script>
+        // Бургер-меню
+        const burger = document.getElementById('burger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Закрытие меню при клике на ссылку
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                burger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // Фиксация навигации при скролле
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.padding = '10px 0';
+                navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.padding = '15px 0';
+                navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            }
+        });
+        
+        // FAQ аккордеон
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+                
+                // Закрытие других открытых вопросов
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+        
+        // Отправка формы
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Получаем данные формы
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Здесь должен быть код отправки данных на сервер
+            // Для примера просто показываем сообщение
+            alert(`Спасибо, ${name}! Ваша заявка принята. Мы свяжемся с вами по номеру ${phone} в ближайшее время.`);
+            
+            // Очищаем форму
+            this.reset();
+        });
+        
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Анимация элементов при скролле
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.process-step, .feature, .portfolio-item, .service-card, .testimonial-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Устанавливаем начальные стили для анимации
+        document.querySelectorAll('.process-step, .feature, .portfolio-item, .service-card, .testimonial-card').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+        // Маска для телефона
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+            e.target.value = '+7' + (x[2] ? ' (' + x[2] : '') + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+        });
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
